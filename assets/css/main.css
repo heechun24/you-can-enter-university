@@ -989,9 +989,16 @@ hr {
 section.special, article.special {
   text-align: center; }
 
-section iframe {
+.iframe-wrapper {
   width: 100%;
-  height: 50em;
+  overflow: hidden;
+}
+
+.iframe-wrapper iframe {
+  width: calc(100% + 1px);
+  margin-left: -1px;
+  border: none;
+  display: block;
 }
 
 header p {
